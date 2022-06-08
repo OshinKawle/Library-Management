@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load crispy_forms_tags %}
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h3>ADD BOOKS</h3>
+    <form method="post">
+        {% csrf_token %}
+        {{form.as_table}}
+        <input type="submit" value="Add Book">
+    </form>
+
+</body>
+</html>
